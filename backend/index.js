@@ -13,7 +13,7 @@ app.use(express.json());
 // Custom  Origin 
 app.use(
        cors({
-              origin: 'http://127.0.0.1:5173',
+              origin: 'https://mern-book-management-app.vercel.app/',
               methods: ['GET', 'POST', 'DELETE', 'PUT'],
               allowedHeaders: ['Content-Type'],
        })
