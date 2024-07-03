@@ -13,9 +13,10 @@ app.use(express.json());
 // Custom  Origin 
 app.use(
        cors({
-              origin: 'https://mern-book-management-app.vercel.app',
+              origin: 'https://mern-book-management-app.vercel.app', // No trailing slash
               methods: ['GET', 'POST', 'DELETE', 'PUT'],
               allowedHeaders: ['Content-Type'],
+              credentials: true
        })
 );
 
